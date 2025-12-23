@@ -44,7 +44,6 @@ class HomeFragement : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         var view = inflater.inflate(R.layout.fragment_home_fragement, container, false)
         tripList = view.findViewById(R.id.tripList)
         memberId = requireContext().getSharedPreferences("memberId", MODE_PRIVATE)

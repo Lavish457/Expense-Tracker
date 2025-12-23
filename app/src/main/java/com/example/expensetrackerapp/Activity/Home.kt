@@ -102,6 +102,13 @@ class Home : AppCompatActivity() {
             isProgrammaticSelection = false
         }
     }
+
+    @Override
+    override fun onResume() {
+        super.onResume()
+        replaceFragment(HomeFragement(),"trips")
+    }
+
     private fun hideNavigationBar() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.setDecorFitsSystemWindows(false)

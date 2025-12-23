@@ -11,6 +11,8 @@
         android:layout_height="match_parent"
         android:id="@+id/recycleBalance"
         tools:listitem="@layout/expense_list"
+        android:paddingBottom="30dp"
+
         />
 
 </FrameLayout>

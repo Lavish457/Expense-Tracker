@@ -18,6 +18,7 @@
        tools:listitem="@layout/all_trips"
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintLeft_toLeftOf="parent"
+       android:paddingBottom="30dp"
 
       />
    <LinearLayout
