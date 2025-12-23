@@ -176,6 +176,7 @@ class TripDetail : AppCompatActivity() {
                         Toast.makeText(this@TripDetail, "$name added!", Toast.LENGTH_SHORT).show()
                         dialog.dismiss()
                         fetchTrip(tripID)
+                        replaceFragment(BalanceFragement.newInstance(tripID)); highlightTab(tabBalances)
                     }
                 } catch (e: Exception) {
                     withContext(Dispatchers.Main) {
@@ -293,7 +294,9 @@ class TripDetail : AppCompatActivity() {
                         Toast.makeText(this@TripDetail, "Expense added & balances updated!", Toast.LENGTH_LONG).show()
                         dialog.dismiss()
                         fetchTrip(tripID)
+                        replaceFragment(BalanceFragement.newInstance(tripID)); highlightTab(tabBalances)
                     }
+
                 } catch (e: Exception) {
                     withContext(Dispatchers.Main) {
                         Toast.makeText(this@TripDetail, "Error: ${e.message}", Toast.LENGTH_LONG).show()

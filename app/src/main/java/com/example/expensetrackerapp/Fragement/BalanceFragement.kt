@@ -39,7 +39,6 @@ class BalanceFragement : Fragment() {
         } else {
             fetchUsers(tripID)
         }
-
         return view
     }
 
